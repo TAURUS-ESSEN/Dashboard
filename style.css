@@ -1,0 +1,235 @@
+@import "modern-normalize";
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  line-height: 1.5;
+  font-family: Bitter, Arial, Helvetica, sans-serif;
+}
+ 
+h1, h2, h3, h4, h5, body, figure, p, ol, ul {
+  margin: 0;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #22086f;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+img {
+  max-inline-size: 100%;
+}
+
+input {
+    border: 1px solid rgb(205, 203, 203);
+    background-color: #e8edf8cf;
+    border-radius: 25px;
+    width: 40vw;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+button {
+    color: #fff;
+    background-color: #1992d4;
+    padding: 15px 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-right: 25px;
+    width: 100px;
+    transition: background 0.3s, transform 0.2s; 
+}
+
+button:hover {
+    background-color: #cd5c0b;
+    color: white;
+    transform: translateY(-2px); 
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+.wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(200px, 250px) 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    background-color: #1992d4;
+    color:white;
+    grid-row: 1 / span 2;
+    display: grid;
+    grid-template-rows: 100px repeat(auto-fill, minmax(200px,1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.sidebar img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    filter: invert(1);
+}
+
+.logo h1 {
+    display: flex;
+    align-items: center;  
+    font-size: 1.5rem; 
+}
+
+.sidebar li {
+    margin-bottom: 5px;
+}
+
+.menu__item a {
+    display: flex;
+    align-items: center; 
+    font-weight: 700;
+}
+
+.search__button {
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.logo img, .search__button img {
+    width: 34px;
+    height: 34px;
+}
+
+.projects__container img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.header {
+    background-color: #fff;
+    grid-column: 2;
+    grid-row: 1;
+    box-shadow: 5px 3px 3px rgba(11, 11, 11, 0.511);
+    padding: 5px;
+}
+
+.header__search {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px 10px 10px 25px;
+    justify-content: space-between;
+}
+
+.header__buttons__left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__buttons__right {
+    text-align: right;
+}
+
+.main {
+    background-color: #e8edf8cf;
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap:20px;
+    padding: 10px 20px 10px 10px;
+}
+
+.main__projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 35px auto;
+    gap: 20px;
+    margin-left: 10px;
+}
+
+.projects__header {
+    grid-column: 1 / span 2;
+}
+
+.projects__container {  
+    border-left: 6px solid orange;
+    box-shadow: 5px 5px 10px rgba(158, 157, 157, 0.484);
+    display: grid;    
+    background-color: #fff;
+}    
+
+.projects__container p, .rightColumn__content p {
+    color: #6e6e6e;
+}
+
+.main__projects div {
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.container__signs {
+    display: flex;
+    justify-content: end;
+    height: 30px;
+}
+
+.main__rightColumn {
+    display: grid;
+    gap: 15px 0px;
+}
+
+.rightColumn__Announcements, .rightColumn__Trending {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.rightColumn__Announcements div {
+    padding: 15px; 
+}
+
+.rightColumn__content {
+    background-color: #fffdfd;
+    border-radius: 15px ;
+    padding: 25px;
+    box-shadow: 3px 5px 10px rgba(126, 126, 126, 0.663);
+}
+
+.trending__content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.rightColumn__content img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.trending {
+    padding: 15px;
+}
